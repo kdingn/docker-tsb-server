@@ -1,6 +1,11 @@
 #!/bin/sh
 set -e
 
+# copy server.properties if not exists
+if [ ! -f server.properties ]; then
+  cp /server.properties.default server.properties
+fi
+
 # EULA
 echo "eula=true" > eula.txt
 
