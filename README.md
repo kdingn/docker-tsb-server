@@ -34,7 +34,7 @@ docker compose up --build -d
 
 **コマンド例:**
 ```bash
-docker cp docker-tsb-server-minecraft-1:/data/world ./world_backup
+docker cp docker-tsb-server-theskyblessing-1:/data/world ./world_backup
 ```
 これにより、ホストマシン（コマンドを実行した場所）の `world_backup` ディレクトリにワールドデータがコピーされます。
 
