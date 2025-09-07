@@ -1,5 +1,5 @@
 services:
-  minecraft:
+  theskyblessing:
     build: .
     ports:
       - "25565:25565"
