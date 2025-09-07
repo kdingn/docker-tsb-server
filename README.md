@@ -1,8 +1,6 @@
-# Docker for The Skyblessing
+# 🐳Docker for The Skyblessing🪽
 
-これは、Minecraft の大規模配布マップ「[The Skyblessing](https://github.com/ProjectTSB/TheSkyBlessing)」を Docker を使用して簡単に起動するための非公式なプロジェクトです。
-
-この素晴らしいマップを制作・配布してくださっている [ProjectTSB](https://github.com/ProjectTSB) の皆様に心から敬意を表します。
+Minecraft の配布マップ「[The Skyblessing](https://tsb.scriptarts.jp)」を Docker を利用して起動するための非公式レポジトリです。[クリエイターのみなさま](https://tsb.scriptarts.jp/creator)に感謝して利用しましょう。
 
 ## 概要
 
@@ -11,19 +9,21 @@
 - **Minecraft Version:** 1.20.4
 - **The Skyblessing Version:** 1.0.4
 
+⚠️[最新版](https://tsb.scriptarts.jp/%E3%83%9B%E3%83%BC%E3%83%A0/download)への追従は気が向いたらやります。多分やりません。
+
 ## 動作要件
 
 - Docker がインストールされていること。
-- （マルチプレイで遊ぶ場合）ご自身の環境でポート開放ができること。（通常の Minecraft サーバーと同様です）
+- マルチプレイで遊ぶ場合はご自身の環境でポート開放ができること（通常の Minecraft サーバーと同様です）。
 
-## 遊び方
+## 利用方法
 
 1. このリポジトリをクローンまたはダウンロードします。
 2. ターミナルでリポジトリのルートディレクトリに移動します。
 3. 以下のコマンドを実行して、サーバーを起動します。
 
 ```bash
-docker compose up -d
+docker compose up --build -d
 ```
 
 サーバーがバックグラウンドで起動します。
@@ -40,6 +40,4 @@ docker cp docker-tsb-server-minecraft-1:/data/world ./world_backup
 
 ## ライセンス
 
-このプロジェクトは The Skyblessing の二次的配布物に該当する可能性があります。ご利用にあたっては、必ず公式のライセンス条項をご確認ください。
-
-- **公式ライセンスページ:** [https://tsb.scriptarts.jp/ホーム/license](https://tsb.scriptarts.jp/%E3%83%9B%E3%83%BC%E3%83%A0/license)
+本レポジトリの利用に特に制限はないですが[公式ライセンスページ](https://tsb.scriptarts.jp/%E3%83%9B%E3%83%BC%E3%83%A0/license)は確認しましょう。
