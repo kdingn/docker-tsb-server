@@ -1,8 +1,8 @@
 services:
-  minecraft-hardcore:
+  vanilla-hardcore-1.21.8:
     build: .
     ports:
       - "25565:25565"
     volumes:
-      - ./backup_world:/data/world
+      - ./backup_1.21.8_vXX:/data/world
     restart: unless-stopped
