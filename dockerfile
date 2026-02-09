@@ -1,6 +1,6 @@
 # Java version: 21
 # Minecraft version: 1.21.11
-FROM openjdk:21-slim
+FROM eclipse-temurin:21-jre-jammy
 ARG SERVER_URL=https://piston-data.mojang.com/v1/objects/64bb6d763bed0a9f1d632ec347938594144943ed/server.jar
 
 ENV TZ=Asia/Tokyo
