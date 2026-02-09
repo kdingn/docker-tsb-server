@@ -1,8 +1,8 @@
 services:
-  vanilla-hardcore-1.21.8:
+  vanilla-normal-1.21.11:
     build: .
     ports:
       - "25565:25565"
     volumes:
-      - ./backup_1.21.8_vXX:/data/world
+      - ./backup_1.21.11_vXX:/data/world
     restart: unless-stopped

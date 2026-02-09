@@ -1,7 +1,7 @@
 # Java version: 21
-# Minecraft version: 1.21.8
+# Minecraft version: 1.21.11
 FROM openjdk:21-slim
-ARG SERVER_URL=https://piston-data.mojang.com/v1/objects/6bce4ef400e4efaa63a13d5e6f6b500be969ef81/server.jar
+ARG SERVER_URL=https://piston-data.mojang.com/v1/objects/64bb6d763bed0a9f1d632ec347938594144943ed/server.jar
 
 ENV TZ=Asia/Tokyo
 RUN apt-get update && apt-get install -y curl unzip \
